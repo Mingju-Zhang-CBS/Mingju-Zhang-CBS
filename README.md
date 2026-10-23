@@ -1,45 +1,66 @@
-![Mingju Zhang: Quantitative Finance](assets/header.svg)
+![Mingju Zhang](assets/header.svg)
 
 # Mingju Zhang
 
-I am an MSFE candidate at Columbia Business School, interested in quantitative research, systematic investing, derivatives and financial data science. I build Python studies that connect financial assumptions to statistical evidence and inspectable implementations.
+**Quantitative Research & Financial Machine Learning**  
+Columbia Business School MSFE ’27 · USC Applied & Computational Mathematics + Cognitive Science
 
-My work asks three connected questions: **Can the validation be trusted? Does the account make economic sense? How do numerical error and hedging costs interact?**
+I build testable research systems that connect financial data, model validation and trading decisions. My mathematical training helps me formalize an idea; cognitive science keeps me interested in how evidence changes a decision. I enjoy the point where an attractive story becomes a question we can actually test.
 
-## Selected work
+[LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/) · [Research directory](https://github.com/Mingju-Zhang-CBS/Quant) · [Methods and background](#research-background)
 
-| Study | What I built | Skills demonstrated |
-| --- | --- | --- |
-| [Financial ML Validation](projects/financial-ml-validation.md) · [Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) | Three classifiers, nine feature/model configurations and a separate confirmation stage. | Financial data preparation, model comparison, leakage controls and uncertainty. |
-| [Systematic Strategy Lab](projects/systematic-strategy-lab.md) · [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) | Four allocation controls with delayed execution, cash, fees and dividend receivables. | Portfolio construction, account modeling, risk analysis and invariants. |
-| [Derivatives Pricing Lab](projects/derivatives-pricing-lab.md) · [Code](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) | Analytical prices/Greeks, Monte Carlo and nine common-path hedge experiments. | Mathematical finance, numerical verification, simulation and performance measurement. |
+**Research thread:** Financial Data → Signals → Validation → Portfolio & Execution.
 
-## Evidence over a headline metric
+![From financial data to trading decisions](assets/research-map.svg)
 
-- **ML:** the synthetic confirmation advantage has a 95% interval spanning zero; probability log loss is retained even when it worsens.
-- **Strategies:** 5,040 strategy-day records reconcile cash, holdings, entitlements and fees.
-- **Pricing:** the antithetic experiment reduces estimated sampling error, while finer hedging exposes a clear risk/cost tradeoff.
+## Selected research
 
-The studies above include workflows, result snapshots, worked reasoning and explicit limitations. Public demonstrations use synthetic data or simulated paths; the numbers are conditional experiments rather than live investment performance.
+### 01 · Agentic Quant Research
 
-## Technical focus
+**Can a research workflow learn from an unsuccessful result?** I built proposal validation, past-only factors, date partitions, frozen selection and sealed-stage recovery. The synthetic development winner fails confirmation; that result stays visible.
 
-| Capability | Where to inspect it |
-| --- | --- |
-| Statistical learning and validation | Fold-fitted preprocessing, grouped/forward evaluation, model ablations and paired uncertainty. |
-| Financial modeling and accounting | Signal timing, constrained trades, corporate actions and a self-financing daily ledger. |
-| Numerical methods and derivatives | Analytical sensitivities, variance reduction, simulation and discrete hedging. |
-| Research software | Explicit input contracts, behavioral tests, standalone packaging, manifests and reproducible artifacts. |
+*Research engineering · temporal validation · lineage*  
+[Code](https://github.com/Mingju-Zhang-CBS/agentic-quant-research) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/agentic-quant-research/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/agentic-quant-research/blob/main/reports/demo/REPORT.md)
 
-**Tools used in these studies:** Python, NumPy, pandas, SciPy, scikit-learn, LightGBM, CatBoost, Matplotlib and pytest.
+### 02 · Financial ML Validation
 
-## Explore
+**How much trust does a financial classifier earn?** I compare logistic regression, LightGBM and CatBoost with keyed label alignment, train-fitted transformations, fixed ablations and date-level uncertainty. The synthetic accuracy interval includes zero.
 
-[Research overview](https://github.com/Mingju-Zhang-CBS/Quant) · [GitHub repositories](https://github.com/Mingju-Zhang-CBS?tab=repositories)
+*Financial ML · data preparation · uncertainty*  
+[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/demo/REPORT.md)
+
+### 03 · Market Making Lab
+
+**What changes when fair value becomes an affordable quote?** I connect backward dynamic programming to three inventory/collateral-aware policies across nine shared-path simulations. Every result can be traced through trade cash flows, markouts and settlement.
+
+*Probability · market microstructure · inventory risk*  
+[Code](https://github.com/Mingju-Zhang-CBS/market-making-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demo/REPORT.md)
+
+### 04 · Systematic Strategy Lab
+
+**Does a signal still make sense inside a funded account?** I model delayed decisions, integer trades, fees, paid cash and dividend receivables. Four controls reconcile daily NAV before cost and execution-delay sensitivity is interpreted.
+
+*Portfolio construction · accounting · execution assumptions*  
+[Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/demo/REPORT.md)
+
+### 05 · Derivatives Pricing Lab
+
+**How do numerical error and hedge costs interact?** I connect analytical prices and Greeks to Monte Carlo variance reduction and common-path delta hedging. The study separates sampling uncertainty, model assumptions and the cost of more frequent trades.
+
+*Mathematical finance · numerical methods · risk*  
+[Code](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/demo/REPORT.md)
+
+## Research background
+
+My recent work connects AI-assisted research systems, financial text, equity signals and portfolio implementation. Academic projects also developed my interest in point-in-time data, credit and real-estate analysis. The [research map](https://github.com/Mingju-Zhang-CBS/Quant#research-map) explains these connections through original method notes, with restricted source materials kept private.
+
+I was a **Top 15 finalist in the Akuna Capital 2026 Virtual Quant Trading Challenge**. The public market-making lab is a separately designed simulation; its results are not official contest scores. I am exploring **2027 full-time opportunities in North America, Hong Kong and China**, primarily in quantitative research and financial ML, with a continuing interest in trading and derivatives.
+
+Outside research, I enjoy Go, Formula 1 and karting, basketball and hiking. For professional background and contact, please use [LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/).
 
 <details>
-<summary>Reproducibility and attribution</summary>
+<summary>How to read the evidence</summary>
 
-Each case study links to the recorded synthetic/simulation metrics and source fingerprints. The standalone implementations contain runnable examples, tests, locked dependencies and research reports. Development and documentation were AI-assisted. Public methods, task definitions and third-party libraries retain their original attribution; restricted employer/course materials are outside the portfolio.
+The five public studies are runnable synthetic or simulated experiments. Methods, configuration, source fingerprints and tests accompany results; unfavorable outcomes remain visible. Prior academic and professional experience is distinguished from these independent implementations. Development and documentation were AI-assisted, and upstream methods and libraries retain attribution. Two [future research briefs](https://github.com/Mingju-Zhang-CBS/Quant#next-research) are explicitly planned rather than presented as completed projects.
 
 </details>
