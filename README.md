@@ -5,7 +5,7 @@
 **Quantitative Research & Financial Machine Learning**  
 Columbia Business School MSFE ’27 · USC Applied & Computational Mathematics + Cognitive Science
 
-I build testable research systems that connect financial data, model validation and trading decisions. My mathematical training helps me formalize an idea; cognitive science keeps me interested in how evidence changes a decision. I enjoy the point where an attractive story becomes a question we can actually test.
+I build testable research systems that connect financial data, model validation and trading decisions. My mathematical and cognitive-science training shapes how I turn ideas into testable questions.
 
 [LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/) · [Research directory](https://github.com/Mingju-Zhang-CBS/Quant) · [Methods and background](#research-background)
 
@@ -24,7 +24,7 @@ I build testable research systems that connect financial data, model validation 
 
 ### 02 · Financial ML Validation
 
-**How much trust does a financial classifier earn?** I compare logistic regression, LightGBM and CatBoost with keyed label alignment, train-fitted transformations, fixed ablations and date-level uncertainty. The synthetic accuracy interval includes zero.
+**How much trust does a financial classifier earn?** I compare logistic regression, LightGBM and CatBoost with keyed labels, train-fitted transformations and date-level uncertainty. The synthetic accuracy interval includes zero.
 
 *Financial ML · data preparation · uncertainty*  
 [Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/demo/REPORT.md)
@@ -57,9 +57,16 @@ I build testable research systems that connect financial data, model validation 
 *Mathematical finance · numerical methods · risk*  
 [Code](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/demo/REPORT.md)
 
+### 07 · Defined-Outcome Research
+
+**What does a buffer mean for a later buyer?** I connect public issuer terms to funded option claims, entry-time scenarios and fee conventions, keeping model marks separate from observed quotes.
+
+*Derivatives · product research · funded decisions*  
+[Code](https://github.com/Mingju-Zhang-CBS/defined-outcome-research) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/reports/demo/REPORT.md)
+
 ## Research background
 
-My recent work connects AI-assisted research systems, financial text, equity signals and portfolio implementation. Academic projects also developed my interest in point-in-time data, credit and real-estate analysis. The [research map](https://github.com/Mingju-Zhang-CBS/Quant#research-map) explains these connections through original method notes, with restricted source materials kept private.
+My work connects AI-assisted research, financial text, equity signals and portfolio implementation, with academic interests in point-in-time data, credit and real estate. The [research map](https://github.com/Mingju-Zhang-CBS/Quant#research-map) explains these connections through original method notes, with restricted source materials kept private.
 
 I was a **Top 15 finalist in the Akuna Capital 2026 Virtual Quant Trading Challenge**. The public market-making lab is a separately designed simulation; its results are not official contest scores. I am exploring **2027 full-time opportunities in North America, Hong Kong and China**, primarily in quantitative research and financial ML, with a continuing interest in trading and derivatives.
 
@@ -68,6 +75,6 @@ Outside research, I enjoy Go, Formula 1 and karting, basketball and hiking. For 
 <details>
 <summary>How to read the evidence</summary>
 
-Six public studies include one real-data FOMC/FX experiment and five synthetic or simulated studies. Methods, configuration, source fingerprints and tests accompany results; unfavorable outcomes remain visible. Prior academic and professional experience is distinguished from these independent implementations. Development and documentation were AI-assisted, and upstream methods and libraries retain attribution. [Future product research](https://github.com/Mingju-Zhang-CBS/Quant#next-research) remains explicitly planned; financial text has progressed to a runnable study.
+Seven studies include real FOMC/FX research, issuer-grounded product scenarios and five synthetic/simulated studies. Methods, configuration, source fingerprints and tests accompany results; unfavorable outcomes remain visible. Prior academic and professional experience is distinguished from these independent implementations. Development and documentation were AI-assisted, and upstream methods and libraries retain attribution. [Further extensions](https://github.com/Mingju-Zhang-CBS/Quant#next-research) remain separately labeled.
 
 </details>
