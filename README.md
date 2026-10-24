@@ -47,10 +47,10 @@ I build testable research systems that connect financial evidence, models and de
 
 ### Financial ML Validation
 
-**How much trust does a classifier earn?** I compare logistic regression, LightGBM and CatBoost with keyed labels, train-fitted transformations and date-level uncertainty. The synthetic accuracy interval includes zero.
+**Can a classifier improve a simple rates forecast?** I compare logistic regression, LightGBM and CatBoost on 9,005 public Treasury-yield observations, with delayed origins and label-availability purging. The baseline leads development; unfavorable and block-sensitive confirmation findings remain visible.
 
-*Synthetic panel · machine learning · validation and uncertainty*  
-[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/demo/REPORT.md)
+*Real public Treasury yields · financial ML · probability validation*  
+[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md)
 
 ### Agentic Quant Research
 
@@ -72,6 +72,6 @@ Outside research: Go, Formula 1 and karting, basketball and hiking. For professi
 <details>
 <summary>Evidence, sources and contribution</summary>
 
-Seven studies comprise two real-data investigations, one issuer-grounded scenario study and four synthetic/simulated implementations. Each labels its data, assumptions and contribution; unfavorable results remain visible. Original coursework and employer materials stay private. Implementation and documentation were AI-assisted, with public methods and library authorship attributed. Further designs are labeled in the directory.
+Seven studies comprise three real-data investigations, one issuer-grounded scenario study and three synthetic/simulated implementations. Each labels its data, assumptions and contribution; unfavorable results remain visible. Original coursework and employer materials stay private. Implementation and documentation were AI-assisted, with public methods and library authorship attributed. Further designs are labeled in the directory.
 
 </details>
