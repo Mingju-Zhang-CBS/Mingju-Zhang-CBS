@@ -1,77 +1,49 @@
-![Mingju Zhang — Finance, Data and Markets](assets/header.svg)
+![Mingju Zhang — Research Studio](assets/header.svg)
 
 # Mingju Zhang
 
 **Finance · Data Science · Quantitative Research**  
 Columbia Business School MSFE ’27 · USC Applied & Computational Mathematics + Cognitive Science
 
-I build testable research systems that connect financial evidence, models and decisions. My work spans investment research and allocation, market and product mechanics, and data science. Mathematical and cognitive-science training shapes how I frame a question, examine uncertainty and explain a result.
+I build testable research systems that connect financial evidence, models and decisions. My interests span systematic investing, derivatives and market mechanics, with data science as a common language. Mathematical training helps me formulate a model; cognitive science encourages me to examine how evidence becomes a decision.
 
-[LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/) · [Complete research directory](https://github.com/Mingju-Zhang-CBS/Quant) · [Background](#research-background)
+[LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/) · [Research directory](https://github.com/Mingju-Zhang-CBS/Quant)
 
-**Explore:** Investing & Allocation · Markets & Products · Data & Research Systems.
+**Financial data → Signals & valuation → Validation → Portfolio & execution**
 
-## 01 / Investing & allocation
+## Selected research
 
-### Systematic Strategy Lab
+### 01 / Financial ML Validation
 
-**Does momentum survive implementation?** I compare allocations on 5,639 official public fund-NAV dates, with publication lags, funded fees and chronological validation. Momentum's confirmation advantage is unproven; the negative comparison stays visible.
+**When does a model deserve to be trusted?** A public Treasury-yield study compares fixed classifiers with simple baselines, using explicit availability clocks, purged labels and dependent uncertainty. Its selected classifier underperforms confirmation. An equity extension connects historical universe selection, lagged factor risk, regularization and costed quintile diagnostics; its licensed-data workflow and synthetic example are labeled separately.
 
-*Real public NAVs · allocation · risk budgets · portfolio accounting*  
-[Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md)
+[Code & methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Treasury findings](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md)
 
-### Financial Text Validation
+### 02 / Derivatives Pricing Lab
 
-**Does policy language add information beyond prices?** I compare text, price and fusion models on 128 public FOMC statements and first-published EUR/USD references. Publication clocks and frozen confirmation separate a plausible story from evidence; incremental text value remains unproven.
+**What separates a correct formula from a useful valuation?** Analytical prices and Greeks connect to Monte Carlo uncertainty, discrete hedging and an independent QuantLib comparison. The SPX extension examines contract conventions and distances from closing bid/ask intervals, distinguishing a numerical check, a synthetic quote fixture and a licensed historical study.
 
-*Real public text/FX · financial NLP · event-time validation*  
-[Code](https://github.com/Mingju-Zhang-CBS/financial-text-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/reports/demo/REPORT.md)
+[Code & methods](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [Numerical comparison](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/quantlib/REPORT.md)
 
-## 02 / Markets & products
+### 03 / Market Making Lab
 
-### Market Making Lab
+**Who still trades when the quote becomes wider?** A finite-state market combines dynamic-programming value, reservation-price demand, informed flow, inventory, collateral and settlement. All predetermined scenarios remain visible. Shared paths reveal how reduced fills and adverse selection can overturn a ranking obtained from price-insensitive customers.
 
-**When is fair value an affordable quote?** I connect dynamic programming with inventory, collateral, adverse selection and settlement across nine shared-path simulations. A trade-level trace explains where simulated P&L comes from.
+[Code & methods](https://github.com/Mingju-Zhang-CBS/market-making-lab) · [Demand experiment](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demand/REPORT.md)
 
-*Simulated market · pricing · inventory and funding risk*  
-[Code](https://github.com/Mingju-Zhang-CBS/market-making-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demo/REPORT.md)
+## Connected studies
 
-### Defined-Outcome Research
+|Study|Research question|
+|---|---|
+|[Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation)|Does policy text add information beyond price history?|
+|[Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)|Does allocation logic survive timing, funding and costs?|
+|[Agentic Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)|Can candidate selection and recovery remain auditable?|
+|[Defined Outcomes](https://github.com/Mingju-Zhang-CBS/defined-outcome-research)|How do entry time, fees and option costs change protection?|
 
-**What does a buffer mean for a later buyer?** I turn public issuer terms into funded option claims, entry-time scenarios and fee comparisons, keeping expiry payoff, model valuation and observed quotes distinct.
+## Background & approach
 
-*Public issuer facts + model scenarios · derivatives · product communication*  
-[Code](https://github.com/Mingju-Zhang-CBS/defined-outcome-research) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/reports/demo/REPORT.md)
+I am exploring 2027 opportunities in North America, Hong Kong and China. I was a Top 15 finalist in the Akuna Capital 2026 Virtual Quant Trading Challenge; the public market-making simulation is a separate study. Earlier learning includes equity signals, financial text, data engineering and statistical modeling. The directory explains those connections and their contribution boundaries.
 
-## 03 / Data & research systems
-
-### Financial ML Validation
-
-**Can a classifier improve a simple rates forecast?** I compare logistic regression, LightGBM and CatBoost on 9,005 public Treasury-yield observations, with delayed origins and label-availability purging. The baseline leads development; unfavorable and block-sensitive confirmation findings remain visible.
-
-*Real public Treasury yields · financial ML · probability validation*  
-[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md)
-
-### Agentic Quant Research
-
-**Can a research process survive selection and interruption?** I built an offline JSON-candidate controller with past-only factors, frozen confirmation, lineage and sealed-stage recovery. Its synthetic winner fails confirmation; no live language model is called.
-
-*Synthetic panel · experiment engineering · audit and recovery*  
-[Code](https://github.com/Mingju-Zhang-CBS/agentic-quant-research) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/agentic-quant-research/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/agentic-quant-research/blob/main/reports/demo/REPORT.md)
-
-**Mathematical foundations:** [Derivatives Pricing Lab](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) connects analytical Greeks, Monte Carlo uncertainty and simulated delta hedging.
-
-## Research background
-
-My academic and professional interests also include equity signals, point-in-time financial data, credit and real estate; the [method notes](https://github.com/Mingju-Zhang-CBS/Quant#research-map) explain these connections without republishing restricted work. I was a **Top 15 finalist in the Akuna Capital 2026 Virtual Quant Trading Challenge**; the public market-making lab is a separate simulation.
-
-I am exploring **2027 opportunities in North America, Hong Kong and China** across investment research, quantitative finance, data science and markets. [Role-specific reading routes](https://github.com/Mingju-Zhang-CBS/Quant#choose-a-reading-route) connect buyside allocation, sell-side pricing/product questions, QR, DS and S&T capabilities.
+Research direction and portfolio choices are mine; code, experiments, tests and documentation were developed with AI assistance. Provenance notes distinguish earlier source work, collaborators, public methods and library authorship. Studies label real observations, issuer facts, licensed inputs and simulation. Negative findings and limitations are part of the work.
 
 Outside research: Go, Formula 1 and karting, basketball and hiking. For professional background and contact, please use [LinkedIn](https://www.linkedin.com/in/mingju-zhang-611b00223/).
-
-<details>
-<summary>Evidence, sources and contribution</summary>
-
-Seven studies comprise three real-data investigations, one issuer-grounded scenario study and three synthetic/simulated implementations. Each labels its data, assumptions and contribution; unfavorable results remain visible. Original coursework and employer materials stay private. Implementation and documentation were AI-assisted, with public methods and library authorship attributed. Further designs are labeled in the directory.
-
-</details>

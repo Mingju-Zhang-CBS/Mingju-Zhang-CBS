@@ -1,33 +1,27 @@
 # Financial ML Validation
 
-[Source repository](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/METHODS.md) · [Tests and offline demo](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/actions/workflows/checks.yml)
+**Question:** Do apparently useful financial features survive a realistic information clock and honest model selection?
 
-**Question:** When can a financial classification score support a research conclusion?
+[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Equity methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/EQUITY_RESEARCH.md) · [Treasury result](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md) · [Tests](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/tree/main/tests)
 
-## Contribution and skills
+## Equity: selection, risk adjustment and prediction
 
-An independent Python study compares logistic regression, LightGBM and CatBoost across three fixed feature variants. It demonstrates financial-panel preparation, exact keyed joins, pipeline-based preprocessing, date-aware validation, model selection, diagnostics and uncertainty reporting.
+The independent extension connects historical month-end selection, eight explicit price/liquidity features, a lagged 252-session factor fit and WLS/weighted Ridge/weighted Lasso. Observation, decision, implementation, return-end and label-availability dates are separate fields. Feature clipping, standardization and inverse-variance weight caps are fitted only in training. Five expanding inner windows select regularization inside each preceding four-year window; ten historical outer years span 2016–2025.
 
-![Research workflow](../assets/financial-ml-validation-workflow.svg)
+The [executed synthetic fixture](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/equity-fixture/REPORT.md) checks this chain without redistributing licensed records. CRSP inputs, security-level predictions and derived real-data results remain private pending applicable publication rights. The current historical factor vintage does not establish complete point-in-time availability.
 
-## The recorded experiment
+Price-shock event windows are explicitly price-defined, rather than earnings or news events. A fixed eight-feature test family retains failed or unevaluable hypotheses. Quintile diagnostics keep raw stock returns, residual outcomes and costed target-weight turnover distinct; they are not funded NAVs or proven alpha.
 
-The synthetic panel contains 4,320 observations, 360 dates and 12 allocations. Three forward development folds use a 20-date purge; a separate 72-date confirmation stage follows development selection. Raw histories, summary statistics and allocation identity form the three ablations.
+## Treasury: a negative result worth keeping
 
-The selected logistic/identity model achieves **52.66% accuracy**, versus **49.31%** for the training-fitted majority baseline. The accuracy difference is **3.36 percentage points**, with a paired date-bootstrap interval of **[-2.08, 9.03]**. Log loss is worse than baseline.
+The separate public-data experiment uses 9,005 H.15 Treasury observations and compares logistic regression, LightGBM and CatBoost with training-fitted probability baselines. Model-selection labels are purged before historical confirmation. The selected CatBoost/dynamics comparator has confirmation log loss 0.71866 versus 0.70915 for climatology; its paired gain is −0.00951, with a 63-session 95% interval [−0.01688, −0.00297]. It does not earn promotion over the baseline.
 
-![Development comparison](../assets/financial-ml-validation-result.png)
+![Treasury uncertainty](../assets/financial-ml-validation-real-result.png)
 
-## The research judgment
+Alternative models and block-length sensitivity remain visible without changing the selection after confirmation. Reference-yield signs are not bond total returns. Current-vintage revisions and missing historical release clocks limit interpretation.
 
-The apparent accuracy improvement remains uncertain, and probability quality is not improved by every measure. I retain that result rather than tuning confirmation until the narrative looks stronger. The study demonstrates a complete validation process; it does not establish investable alpha.
+## Skills and contribution
 
-Its official-data adapter also distinguishes anonymous date groups from a known calendar. Previously inspected challenge labels do not become unseen data after reshuffling. Prediction vectors must align exactly: broadcasting and nonfinite probabilities are rejected before uncertainty is calculated.
+The evidence demonstrates econometric modeling, security/time joins, train-only transforms, nested temporal selection, baseline judgment and dependent inference. Public-method implementation, tests and documentation were AI-assisted; teacher frameworks, group submissions and licensed data are excluded. Individual review is separate from automated execution. [Contribution boundaries](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/PROVENANCE.md).
 
-## What to inspect in the standalone implementation
-
-`data.py` defines schema, alignment and features. `research.py` implements folds, fold-fitted estimators, selection and the paired bootstrap. The CLI generates aggregate artifacts, while `examples/explain_validation.py` walks through alignment and a training fold. Behavioral tests exercise time boundaries, target aliases, invalid vector shapes, preprocessing scope and estimator integration.
-
-[Recorded metrics](../assets/financial-ml-validation-metrics.json) · [Run manifest](../assets/financial-ml-validation-manifest.json)
-
-The complete implementation is published in [`financial-ml-validation`](https://github.com/Mingju-Zhang-CBS/financial-ml-validation). Public snapshots use synthetic data. Development was AI-assisted; the original QRT task and estimator libraries retain attribution.
+[Research directory](../README.md)
