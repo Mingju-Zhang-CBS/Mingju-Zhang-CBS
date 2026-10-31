@@ -38,7 +38,7 @@ I build testable research systems that connect financial evidence, models and de
 |Study|Research question|
 |---|---|
 |[Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation)|Does policy text add information beyond price history?|
-|[Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)|Does implementation survive timing, funding and costs? Commodity risk and [intraday source evidence](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_EVIDENCE.md) connect quote precision, publication clocks and failed execution.|
+|[Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)|Does implementation survive timing, funding and costs? Commodity risk and [intraday source evidence](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_EVIDENCE.md) connect quote-source identity, precise availability bounds and failed execution.|
 |[Agentic Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)|Can candidate selection and recovery remain auditable?|
 |[Defined Outcomes](https://github.com/Mingju-Zhang-CBS/defined-outcome-research)|How do entry time, fees and option costs change protection?|
 
