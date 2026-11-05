@@ -37,7 +37,7 @@ I build testable research systems that connect financial evidence, models and de
 
 |Study|Research question|
 |---|---|
-|[Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation)|Does policy text add information beyond price history? [Company news: novelty and sentiment](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) extends the question; WRDS Cloud access verified, real-data audit underway, predictive validation pending.|
+|[Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation)|Does policy text add information beyond price history? [Company news: novelty and sentiment](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) extends the question; private WRDS experiments and report executed, interpretation and implementation review pending.|
 |[Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)|Does implementation survive timing, funding and costs? Commodity risk and [intraday source evidence](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_EVIDENCE.md) connect quote-source identity, publication evidence and failed execution.|
 |[Agentic Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)|Can candidate selection and recovery remain auditable?|
 |[Defined Outcomes](https://github.com/Mingju-Zhang-CBS/defined-outcome-research)|How do entry time, fees and option costs change protection?|
