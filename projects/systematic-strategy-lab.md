@@ -4,19 +4,21 @@
 
 **Question:** Does momentum improve a funded multi-asset allocation after a fair risk-budget control, publication lags and fees?
 
-## Investment, data and market-implementation skills
-
-The AI-assisted implementation provides a five-fund public NAV snapshot contract, fixed allocation rules, a shared-risk-budget static control, self-financing unit transfers, chronological evaluation, paired uncertainty and readable research artifacts. It connects opportunity-cost analysis with financial data judgment and valuation/funding questions. Contribution and individual review are distinct from automated execution.
-
-The 5,639 official TSP valuation dates cover 2003–2025. Each strategy has 5,368 evaluation rows, giving 21,472 daily account rows across momentum, static, C buy-and-hold and G reserve controls. Investment income and expenses are embedded in NAV; no separate dividend, operating fee or cash yield is added. The data-rights record documents public numerical facts and the U.S.-government-work basis, without inventing a third-party Creative Commons grant.
-
-![Real fund NAV allocation results](../assets/systematic-strategy-lab-real-result.png)
-
-## Findings, including failure
+## Public TSP allocation results
 
 In chronological confirmation (2020–2025), momentum returned 30.69% versus 33.97% for static. Its annualized mean paired log-return difference was −0.42 percentage points, with a 20-session block 95% interval [−3.23, +2.33] pp. The 63-session interval also contains zero; all nine predefined cost/delay comparisons were negative. The evidence does not establish an incremental momentum advantage.
 
 The shared risk budget is not exact realized-risk equality, and a comparison with C buy-and-hold has a different exposure. Temporal windows retain continuous holdings, trailing covariance and fixed rules. Historical familiarity and unavailable publication/revision archives prevent a prospective independent OOS claim.
+
+![Modeled wealth and drawdowns using observed public fund NAVs](../assets/systematic-strategy-lab-real-result.png)
+
+*Historical TSP NAVs with modeled transfers, 2003–2025.*
+
+## Data and account design
+
+The AI-assisted implementation provides a five-fund public NAV snapshot contract, fixed allocation rules, a shared-risk-budget static control, self-financing unit transfers, chronological evaluation, paired uncertainty and readable research artifacts. It connects opportunity-cost analysis with financial data judgment and valuation/funding questions. Contribution and individual review are distinct from automated execution.
+
+The 5,639 official TSP valuation dates cover 2003–2025. Each strategy has 5,368 evaluation rows, giving 21,472 daily account rows across momentum, static, C buy-and-hold and G reserve controls. Investment income and expenses are embedded in NAV; no separate dividend, operating fee or cash yield is added. The data-rights record documents public numerical facts and the U.S.-government-work basis, without inventing a third-party Creative Commons grant.
 
 ## A decision has four clocks
 
@@ -31,3 +33,5 @@ The executable packet contains 23 tests, five real-data figures, four strategies
 ## Source and scope
 
 Source: official TSP public numerical fund-NAV facts, captured in October 2026 and truncated at 31 December 2025. Restricted fund eligibility, a special G reserve mandate, the 2024 I Fund benchmark transition, current-vintage revisions and hypothetical transaction friction constrain interpretation. No original course, employer, client or recruiting materials are included. Development and documentation were AI-assisted.
+
+[Full index of allocation, commodity and intraday studies](https://github.com/Mingju-Zhang-CBS/Quant/blob/main/projects/systematic-strategy-lab.md)
